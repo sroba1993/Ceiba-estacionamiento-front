@@ -1,0 +1,55 @@
+.header {
+    background-color: #012638;
+    display: flex;
+    height: 100px;
+    align-items: center; 
+    justify-content: flex-start; 
+}
+
+.header ol {
+    display: flex; 
+    height: 60px; 
+    align-items: inherit;
+}
+
+.header li{
+    display: flex;
+    height: inherit; 
+    border: 2px solid gray;
+    border-radius: 10px; 
+    margin: 10px; 
+    margin-bottom: 10px;
+}
+
+.header a {
+    display: flex;
+    align-items: center;     
+    height: inherit; 
+    color: white;
+    text-decoration: none;
+    padding: 0 20px; 
+    font-size: 30px;  
+    line-height: 100%;  
+    letter-spacing: -0,2px; 
+}
+
+.footer p {
+    margin:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer img {
+    vertical-align: middle;
+}
+
+.footer {
+    color: white;
+    height: 68px;
+    background-color: #252a61;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Buen espacio entre palabras*/
+}
+

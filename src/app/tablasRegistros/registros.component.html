@@ -1,0 +1,20 @@
+<div class="container">
+  <section id="registros" class="registros"> 
+    <table class="tabla">
+      <thead>
+        <tr class="headerTabla">
+          <th class="celda">Placa</th>
+          <th class="celda">Tipo de Vehiculo</th>
+          <th class="celda">Fecha de Entrada</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let vehiculo of vehiculosDTO">
+          <td class="celda">{{vehiculo.placa}}</td>
+          <td class="celda">{{vehiculo.tipoVehiculo}}</td>
+          <td class="celda">{{vehiculo.fechaEntrada | date:"yyyy-MM-dd HH:mm"}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</div>

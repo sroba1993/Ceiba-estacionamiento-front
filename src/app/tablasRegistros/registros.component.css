@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.registros {
+    background:#BDBDBD;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 10px; 
+    margin: 10px;
+    padding: 20px;
+    width: 400px;
+}
+
+.celda {
+    margin: 0px; 
+    margin-bottom: 15px; 
+    padding: 5px 15px; 
+    background: #BDBDBD;
+    text-align: center;
+    font-size:17px;
+}

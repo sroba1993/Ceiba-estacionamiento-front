@@ -1,0 +1,42 @@
+<div class="titulo">
+  <h1>Bienvenido al Estacionamiento Ceiba</h1>
+</div>
+<section id="inicio" class="inicio">
+  <div class="container">
+    <article class="containerIngreso">
+      <form action="" class="formularioIngreso" (ngSubmit) = "clickIngresarVehiculo(formIngreso)" #formIngreso="ngForm">
+        <div class="campoPlaca">
+          <input type="text" [(ngModel)]="ingresoVehiculo.placa" #placa="ngModel" name="placa" placeholder="Ingrese placa">
+        </div>
+        <div class="textTipoVehiculo">
+          <h3>Ingrese el tipo de Vehiculo</h3>
+        </div>
+        <div class="containerTipoVehiculo">
+          <select name="tipoVehiculo" class="tipoVehiculo" [(ngModel)]="ingresoVehiculo.tipoVehiculo" #tipoVehiculo="ngModel" name="tipoVehiculo" placeholder="Ingrese el tipo de vehiculo"> 
+            <option value="carro" (click)="habilitarCilindraje = false">Carro</option> 
+            <option value="moto" (click)="habilitarCilindraje = true">Moto</option> 
+          </select>
+        </div>
+        <div class="campoCilindraje">
+          <input *ngIf="habilitarCilindraje == false" type="number" [(ngModel)]="ingresoVehiculo.cilindraje"  #cilindraje="ngModel" name="cilindraje" placeholder="Ingrese cilindraje Vehiculo" >
+        </div>
+        <div class="enviar">
+          <button type="submit" onclick="openForm()">Ingresar</button>
+        </div>
+      </form>
+    </article>
+    <article class="containerIngreso">
+      <form action="" class="formularioIngreso" (ngSubmit) = "clickRegistrarSalida(formSalida)" #formSalida="ngForm">
+        <div class="campoPlaca">
+          <input type="text" [(ngModel)]="vehiculo.placa" #placa="ngModel" name="placa" placeholder="Ingrese placa" >
+        </div>
+        <div class="factura">
+          <h3>Total a pagar: {{vehiculo.totalPagar}}</h3>
+        </div>
+        <div class="enviar">
+          <button type="submit">Salir<br>Parqueadero</button>
+        </div>
+      </form>
+    </article>
+  </div>
+</section>

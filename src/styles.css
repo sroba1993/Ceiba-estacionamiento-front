@@ -1,0 +1,80 @@
+/*
+ Mobile Styles 
+@media only screen and (max-width: 400px) {
+    body {
+        background-color: #F09A9D; 
+    }
+}
+  
+   Tablet Styles 
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+        background-color: #F5CF8E; 
+    }
+}
+  
+   Desktop Styles 
+@media only screen and (min-width: 961px) {
+    body {
+        font-family: 'Source Sans Pro', sans-serif;
+        margin: 0;
+        background: #E6E6E6;
+    }
+}
+*/
+
+@media only screen and (min-width: 1101px) {
+    body {
+        font-family: 'Source Sans Pro', sans-serif;
+        margin: 0;
+        background: #E6E6E6;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+        font-family: 'Source Sans Pro', sans-serif;
+        margin: 0;
+        background: yellow;
+    }
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+    font-family: 'Fjalla One', sans-serif; 
+    font-weight: normal;
+}
+
+h1 { 
+    font-size: 40px;  
+    line-height: 150%;  
+    letter-spacing: -0,2px;  
+    color: #424242;
+    margin: 0;
+}
+
+h1 strong{
+    color: #026fff;
+}
+
+.project{
+    border: 1px solid gray;
+    border-radius: 10px; /* borde redondeado de ese elemento */
+    /* border-top-rigth-radius: 50px;  para cada radio*/
+    margin: 10px; /* margen por todo alrededor del elemento*/
+    margin-bottom: 15px; /* margen que tiene un elemento por debajo*/
+    padding: 20px; /* diferente al margen pero da espacio por fuera del elemento*/
+    background: white;
+    display: flex;
+}
+
+.project-details {
+    width: 500px;
+}
+
+.project-imageContainer {
+    width: 500px;
+}
